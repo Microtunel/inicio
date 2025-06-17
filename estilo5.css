@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+.contenedor{
+    background-color: rgb(140, 252, 252);
+    display: grid;
+    grid-template-columns: repeat(6,minmax(100px,1fr));
+    grid-template-rows: repeat(12,minmax(50px,1fr));
+    gap: 2px;
+    color:rgba(253, 248, 248, 0.986);
+}
+.encabezado{
+    
+     grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: repeat(6,minmax(50px,1fr));
+    grid-template-rows: 1fr;
+     
+
+}
+.a1,.a2,.a3,.a4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a1{
+   background-color:darkcyan ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.a2{
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+.a3{
+   background-color: darkcyan;
+    border-radius: 10px;
+}
+.a4{
+background-color: darkcyan;
+    border-radius: 10px;
+}
+.a1:hover{
+    background-color: blanchedalmond;
+}
+.a2:hover{
+background-color: blanchedalmond;
+}
+.a3:hover{
+    background-color: blanchedalmond;
+}
+.a4:hover{
+    background-color: blanchedalmond;
+}
+.cuerpo{
+    background:linear-gradient(rgba(122, 127, 139, 0.1),rgba(168, 174, 187, 0.1)), url('https://archzine.es/wp-content/uploads/2019/07/5-arbol-atardecer-nubes-agua-naturaleza-noche-bonita-en-la-orrilla-del-mar-fondos-de-pantalla-bonitos-y-originales-para-descargar-gratis.jpg');
+   grid-column-start: 1;
+   grid-column-end: 7;
+   grid-row-start: 2;
+   grid-row-end: 11;
+    color:rgba(234, 238, 240, 0.856);
+    
+}
+p{
+    text-decoration: underline;
+}
+.subrayado{
+     text-decoration: underline;
+}
+.pie{
+   
+    grid-column-start: 1;
+    grid-column-end: 12;
+     color:rgb(10, 10, 10);
+}
+a{
+    text-decoration: none;
+    
+}
+.contenedor2{
+    width: 100vw;
+    margin: auto;
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-auto-rows: 400px;
+    min-height: 100%;
+    background:linear-gradient(rgba(122, 127, 139, 0.1),rgba(168, 174, 187, 0.1)), url('https://archzine.es/wp-content/uploads/2019/07/5-arbol-atardecer-nubes-agua-naturaleza-noche-bonita-en-la-orrilla-del-mar-fondos-de-pantalla-bonitos-y-originales-para-descargar-gratis.jpg');
+   background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

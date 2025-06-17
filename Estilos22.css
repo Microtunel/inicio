@@ -1,0 +1,128 @@
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+}
+body{
+    margin: 0;
+      font-family: 'Playfair Display', serif;
+    font-style: italic;
+
+   
+}
+.contenedor{
+    font-family: 'Verdana', sans-serif;
+    background-color: rgb(64, 171, 179);
+    display:grid;
+    grid-template-columns: repeat(6,minmax(100px,1fr));
+    grid-template-rows: repeat(11,minmax(50px,1fr));
+    gap: 2px;
+}
+.encabezado{
+   background-color: rgb(64, 171, 179);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+    display: grid;
+    grid-template-columns: repeat(6,minmax(50px,1fr));
+    grid-template-rows:1fr ;
+
+}
+.a1,.a2,.a3,.a4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.a1{
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.a2{
+  
+    border-radius: 5px;
+}
+.a3{
+  
+    border-radius: 5px;
+}
+.a4{
+    
+    border-radius: 5px;
+}
+.a1:hover{
+    background-color: cornflowerblue;
+}
+.a2:hover{
+    background-color: chartreuse;
+}
+.a3:hover{
+    background-color: chocolate;
+}
+.a4:hover{
+    background-color: darkmagenta;
+}
+.cuerpo{
+   
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start:2 ;
+    grid-row-end: 11;
+}
+.pie{
+    
+   background-color: rgb(64, 171, 179);
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+a{
+text-decoration: none;
+    color: rgb(5, 3, 26);
+}
+.contenedor2{
+ width: 100vw;
+    margin: auto;
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 300px);  
+    padding: 20px;
+     background:linear-gradient(rgba(122, 127, 139, 0.1),rgba(168, 174, 187, 0.1)), url('https://archzine.es/wp-content/uploads/2019/07/5-arbol-atardecer-nubes-agua-naturaleza-noche-bonita-en-la-orrilla-del-mar-fondos-de-pantalla-bonitos-y-originales-para-descargar-gratis.jpg');
+    background-size: cover;
+     color:white;
+    
+}
+   .b2{ 
+    background-size: cover;
+     background-color: rgb(64, 171, 179);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start:1 ;
+    grid-row-end:2 ;
+    display: grid;
+    grid-template-columns: repeat(6,minmax(50px,1fr));
+    grid-template-rows:1fr ;
+   }
+
+.item{
+border-radius: 10px;
+text-align: center;
+ animation: girar 2s linear infinite;
+}
+
+.tarjeta{
+border-radius: 10px;
+ text-align: center;
+  animation: aparecer 3s ease forwards;
+width: 100%;
+height: 80%;
+box-shadow: 0 10px 10px rgba(86,111,174,0.2);
+}
